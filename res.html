@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container  text-center d-flex justify-content-center align-items-center">
+        <div class="boxRegister w-75 p-5 m-auto ">
+            <h1 class="mb-5">Smart Login System</h1>
+            <input id="nameRes" type="text" class="form-control mb-3 px-3" placeholder="Enter your name" >
+            <input id="emailRes" type="email" class="form-control mb-3 px-3" placeholder="Enter your email" required>
+            <p id="errorEmail" class="text-danger mb-3 d-none">the email already exists enter another email</p>
+            <input id="passwordRes" type="password" class="form-control mb-1 px-3" placeholder="Enter your password" required>
+            <p id="passwordRonge" class="fs-5 text-danger d-none">make sure start with 7 character</p>
+
+            <input id="signBtn" onclick="addUser()" type="button" value="Sign Up" class="form-control py-3 mt-5 mb-5">
+            <p id="successMessage" class="d-none">Success</p>
+            <p id="errorMessage" class="d-none">there are error check your input </p>
+            <a id="linkLogin" class="fs-3 d-none" href="index.html">LogIn</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
